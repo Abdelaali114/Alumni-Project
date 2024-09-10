@@ -89,12 +89,13 @@ jobs:
       # Deploy backend
       - name: Pull and run backend container
         run: |
-          docker pull abdelaali2550/alumni-backend:latest
-          docker stop alumni-backend-container || true
-          docker rm alumni-backend-container || true
-          docker run -d -p 3001:3001 --name alumni-backend-container \
+          sudo docker pull abdelaali2550/alumni-backend:latest
+          sudo docker stop alumni-backend-container || true
+          sudo docker rm alumni-backend-container || true
+          sudo docker run -d -p 3001:3001 --name alumni-backend-container \
           -e MONGO_PASSWORD='${{ secrets.MONGO_PASSWORD }}' \
           abdelaali2550/alumni-backend:latest
+
 
       # Deploy frontend
       - name: Pull and run frontend container
