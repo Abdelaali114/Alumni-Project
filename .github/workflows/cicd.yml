@@ -71,7 +71,7 @@ jobs:
       # Build and push frontend Docker image
       - name: Build frontend Docker image
         run: |
-          docker build -t abdelaali2550/alumni-frontend:latest ./client  # Corrected path
+          docker build -t abdelaali2550/alumni-frontend:latest ./client/src  
 
       - name: Push frontend Docker image
         run: docker push abdelaali2550/alumni-frontend:latest
