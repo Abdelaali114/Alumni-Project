@@ -100,8 +100,8 @@ jobs:
       # Deploy frontend
       - name: Pull and run frontend container
         run: |
-          docker pull abdelaali2550/alumni-frontenddd:latest
-          docker stop alumni-frontenddd-container || true
-          docker rm alumni-frontenddd-container || true
-          docker run -d -p 5173:80 --name alumni-frontenddd-container \
+          sudo docker pull abdelaali2550/alumni-frontenddd:latest
+          sudo docker stop alumni-frontenddd-container || true
+          sudo docker rm alumni-frontenddd-container || true
+          sudo docker run -d -p 5173:80 --name alumni-frontenddd-container \
           abdelaali2550/alumni-frontenddd:latest
