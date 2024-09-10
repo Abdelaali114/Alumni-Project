@@ -71,10 +71,11 @@ jobs:
       # Build and push frontend Docker image
       - name: Build frontend Docker image
         run: |
-          docker build -t abdelaali2550/alumni-frontend:latest ./client/src
+          docker build -t abdelaali2550/alumni-frontend:latest ./client  # Corrected path
 
       - name: Push frontend Docker image
         run: docker push abdelaali2550/alumni-frontend:latest
+
 
   # Deploy both backend and frontend
   Deploy:
