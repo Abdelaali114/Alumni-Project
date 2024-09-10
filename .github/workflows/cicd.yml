@@ -70,8 +70,8 @@ jobs:
 
       # Build and push frontend Docker image
       - name: Build frontend Docker image
-        run: |
-          docker build -t abdelaali2550/alumni-frontenddd:latest ./client
+        run: docker build -t your-username/alumni-frontend:latest -f ./client/scr/Dockerfile ./client
+
 
       - name: Push frontend Docker image
         run: docker push abdelaali2550/alumni-frontenddd:latest
