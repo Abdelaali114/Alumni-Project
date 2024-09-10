@@ -45,7 +45,7 @@ const Avatar = ({ userId, name, imageUrl, width, height }) => {
     >
       {imageUrl ? (
         <img
-          src={`http://localhost:3001/assets/${imageUrl}`}
+          src={`http://16.170.205.207:3001/assets/${imageUrl}`}
           width={width}
           height={height}
           alt={name}
