@@ -112,7 +112,7 @@ const Form = () => {
       formData.append("picturePath", values.picture.name);
 
       const savedUserResponse = await fetch(
-        "http://16.170.205.207:3001/auth/register",
+        "http://16.171.78.95:3001/auth/register",
         {
           method: "POST",
           body: formData,
@@ -136,7 +136,7 @@ const Form = () => {
 
   const login = async (values, onSubmitProps) => {
     try {
-      const loggedInResponse = await fetch(`${process.env.BACKEND_URL}/auth/login`, {
+      const loggedInResponse = await fetch("http://16.171.78.95:3001/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(values),
