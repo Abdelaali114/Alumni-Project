@@ -14,7 +14,7 @@ const SinglePostPage = () => {
 
   const fetchPost = async () => {
     try {
-      const response = await fetch(`http://16.170.205.207:3001/posts/${postId}`, {
+      const response = await fetch(`http://16.171.78.95:3001/posts/${postId}`, {
         method: "GET",
         headers: {
           Authorization: `Bearer ${token}`,

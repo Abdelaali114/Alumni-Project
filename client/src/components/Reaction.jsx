@@ -10,7 +10,7 @@ import {
 import { Box, IconButton } from '@mui/material';
 
 const patchLike = async () => {
-    const response = await fetch(`http://16.170.205.207:3001/posts/${postId}/like`, {
+    const response = await fetch(`http://16.171.78.95:3001/posts/${postId}/like`, {
       method: "PATCH",
       headers: {
         Authorization: `Bearer ${token}`,

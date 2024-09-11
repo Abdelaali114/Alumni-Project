@@ -58,7 +58,7 @@ const PostWidget = ({
  // Fetch the current reaction for the post on mount
  useEffect(() => {
   const fetchCurrentReaction = async () => {
-    const response = await fetch(`http://16.170.205.207:3001/posts/${postId}/reaction?userId=${loggedInUserId}`, {
+    const response = await fetch(`http://16.171.78.95:3001/posts/${postId}/reaction?userId=${loggedInUserId}`, {
       method: "GET",
       headers: {
         Authorization: `Bearer ${token}`,
@@ -80,7 +80,7 @@ const PostWidget = ({
  //
 
  const patchLike = async (reaction) => {
-  const response = await fetch(`http://16.170.205.207:3001/posts/${postId}/like`, {
+  const response = await fetch(`http://16.171.78.95:3001/posts/${postId}/like`, {
     method: "PATCH",
     headers: {
       Authorization: `Bearer ${token}`,
@@ -94,7 +94,7 @@ const PostWidget = ({
 };
 
 const patchUnlike = async () => {
-  const response = await fetch(`http://16.170.205.207:3001/posts/${postId}/unlike`, {
+  const response = await fetch(`http://16.171.78.95:3001/posts/${postId}/unlike`, {
     method: "PATCH",
     headers: {
       Authorization: `Bearer ${token}`,
@@ -161,7 +161,7 @@ const handleReact = async (reaction) => {
           height="auto"
           alt="post"
           style={{ borderRadius: "0.75rem", marginTop: "0.75rem" }}
-          src={`http://16.170.205.207:3001/assets/${picturePath}`}
+          src={`http://16.171.78.95:3001/assets/${picturePath}`}
         />
       )}
       <FlexBetween mt="0.25rem">
@@ -213,7 +213,7 @@ const handleReact = async (reaction) => {
       <SharePopup
         open={sharePopupOpen}
         handleClose={handleShareClose}
-        url={`http://16.170.205.207:5173/posts/${postId}`} // Adjust the URL as needed
+        url={`http://16.171.78.95:5173/posts/${postId}`} // Adjust the URL as needed
       />
     </WidgetWrapper>
   );

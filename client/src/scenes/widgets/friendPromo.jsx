@@ -15,7 +15,7 @@ const SearchUser = ({ onClose }) => {
   const theme = useTheme();
 
   const handleSearchUser = async () => {
-    const URL = "http://16.170.205.207:3001/search/users";
+    const URL = "http://16.171.78.95:3001/search/users";
     try {
       setLoading(true);
       const response = await axios.post(URL, {

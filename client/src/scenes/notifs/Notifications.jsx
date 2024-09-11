@@ -30,7 +30,7 @@ const Notifications = () => {
 
     try {
       const response = await fetch(
-        `http://16.170.205.207:3001/notifications/${user._id}`,
+        `http://16.171.78.95:3001/notifications/${user._id}`,
         {
           method: "GET",
           headers: {

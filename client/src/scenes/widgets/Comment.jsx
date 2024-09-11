@@ -60,7 +60,7 @@ const Comment = ({ postId, user, userId }) => {
         margin="20px 0"
       >
         <Avatar
-          src={`http://16.170.205.207:3001/assets/${user.picturePath}`}
+          src={`http://16.171.78.95:3001/assets/${user.picturePath}`}
           alt=""
           sx={{ width: 40, height: 40 }}
         />
@@ -99,7 +99,7 @@ const Comment = ({ postId, user, userId }) => {
             margin="30px 0"
           >
             <Avatar
-              src={`http://16.170.205.207:3001/assets/${comment.user.picturePath}`}
+              src={`http://16.171.78.95:3001/assets/${comment.user.picturePath}`}
               alt=""
               sx={{ width: 40, height: 40 }}
             />

@@ -7,7 +7,7 @@ const UserImage = ({ image, size = '60px' }) => {
         className="object-cover rounded-full"
         style={{ width: size, height: size }}
         alt="user"
-        src={`http://16.170.205.207:3001/assets/${image}`}
+        src={`http://16.171.78.95:3001/assets/${image}`}
       />
     </div>
   );

@@ -27,7 +27,7 @@ const UserLocations = () => {
   useEffect(() => {
     const fetchLocations = async () => {
       try {
-        const response = await axios.get("http://16.170.205.207:3001/locations");
+        const response = await axios.get("http://16.171.78.95:3001/locations");
         console.log("Fetched locations:", response.data);
         setLocations(response.data);
       } catch (err) {

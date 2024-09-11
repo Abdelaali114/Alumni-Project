@@ -36,7 +36,7 @@ const Passwordpage = () => {
     
     try {
       // Example POST request to update password
-      const response = await fetch(`http://16.170.205.207:3001/changepassword/pass`, {
+      const response = await fetch(`http://16.171.78.95:3001/changepassword/pass`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -17,7 +17,7 @@ export const SocketContextProvider = ({ children }) => {
 
   useEffect(() => {
     if (user) {
-      const socket = io("http://16.170.205.207:3001", {
+      const socket = io("http://16.171.78.95:3001", {
         auth: {
           token: token,
         },

@@ -58,7 +58,7 @@ const Navbar = () => {
   const handleSearch = async () => {
     try {
       const response = await fetch(
-        `http://16.170.205.207:3001/search?query=${searchTerm}`,
+        `http://16.171.78.95:3001/search?query=${searchTerm}`,
         {
           method: "GET",
           headers: {
@@ -83,7 +83,7 @@ const Navbar = () => {
 
     try {
       const response = await fetch(
-        `http://16.170.205.207:3001/notifications/${user._id}`,
+        `http://16.171.78.95:3001/notifications/${user._id}`,
         {
           method: "GET",
           headers: {
@@ -115,7 +115,7 @@ const Navbar = () => {
       await Promise.all(
         notifications.map((notification) =>
           axios.put(
-            `http://16.170.205.207:3001/notifications/read/${notification._id}`,
+            `http://16.171.78.95:3001/notifications/read/${notification._id}`,
             {},
             {
               headers: {
