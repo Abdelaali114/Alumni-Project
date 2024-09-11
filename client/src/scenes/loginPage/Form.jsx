@@ -136,7 +136,7 @@ const Form = () => {
 
   const login = async (values, onSubmitProps) => {
     try {
-      const loggedInResponse = await fetch("http://16.170.205.207:3001/auth/login", {
+      const loggedInResponse = await fetch(`${process.env.BACKEND_URL}/auth/login`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(values),
