@@ -34,7 +34,7 @@ const __dirname = path.dirname(__filename);
 dotenv.config();
 
 app.use((req, res, next) => {
-  res.setHeader('Access-Control-Allow-Origin', "http://localhost:5173");
+  res.setHeader('Access-Control-Allow-Origin', "http://16.171.78.95:5173");
   next();
 });
 app.use(express.json());
@@ -65,7 +65,7 @@ app.post('/forgot-password', (req, res) => {
         }
       });
 
-      const resetLink = `http://localhost:5173/reset_password/${user._id}/${token}`;
+      const resetLink = `http://16.171.78.95:5173/reset_password/${user._id}/${token}`;
 
       var mailOptions = {
         from: process.env.EMAIL_USER,
