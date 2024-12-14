@@ -3,10 +3,10 @@ name: Deploy Alumni-Project
 on:
   push:
     branches:
-      - new-branch
+      - test
   pull_request:
     branches:
-      - new-branch
+      - test
     types:
       - opened
       - synchronize
