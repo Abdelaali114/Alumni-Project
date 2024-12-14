@@ -22,5 +22,5 @@ COPY --from=build /app/dist .
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY conf.d/*.conf /etc/nginx/conf.d/
 
-EXPOSE 80
+EXPOSE 5173
 ENTRYPOINT [ "nginx", "-g", "daemon off;" ]
